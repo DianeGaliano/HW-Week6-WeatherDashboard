@@ -11,24 +11,25 @@
         <h1>Weather Dashboard</h1>
     </header>
 
-    <main>
+    <main class="flex-row justify-space-between">
+        <div class="col-12 col-md-4">
     
-    </main>
+          <div class="card">
+            <h3 class="card-header text-uppercase">Search By City</h3>
+            <form id="search-form" class="card-body">
+              <label class="form-label" for="cityName">City</label>
+              <input name="city" id="city" type="text" autofocus="true" class="form-input" />
+              <button type="submit" class="btn">Get Weather</button>
+            </form>
+          </div>
+    
+        <div class="col-12 col-md-8">
+          <h2 class="subtitle">Showing Weather for: <span id="repo-search-term"></span></h2>
+          
+          <div id="repos-container" class="list-group"></div>
+        </div>
+      </main>
 
-    <aside>
-        <h2>Search for a City:</h2>
-        <form id="cityForm">
-          <input type="text" class="form-input w-100" id="cityInput" name="cityInput" placeholder="Enter city name" />
-        </form>
-
-        <button class="btn btn-info">Search</button>  
-        
-        <hr />
-        <br>
-            
-        <ul id="cityList"></ul>
-
-    </aside>
     <script src="./script.js"></script>
 </body>
 </html>
