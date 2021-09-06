@@ -37,3 +37,4 @@ var getCityWeather = function (onecall) {
     }
   });
 };
+
